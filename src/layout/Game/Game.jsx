@@ -34,7 +34,7 @@ const chooseForm = (word) => {
   const conjugation = conjugationType[rand - 1];
   const form = conjugation !== 'teForm' ? conjugationForms[randForm - 1] : 'affirmative';
 
-  const choosen = word.conjugation[conjugation][form].trim();
+  const choosen = word.conjugation[conjugation][form].trim().split(' ').join('');
 
   const conjugatedKana = toHiragana(choosen);
 
