@@ -1,6 +1,6 @@
 import React, { createContext, useReducer } from 'react';
 import produce from 'immer';
-import { list as words } from '../data/list-1.json';
+import { list as words } from '../data/most-used-verbs.json';
 
 export const SessionContext = createContext();
 
